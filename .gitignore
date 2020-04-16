@@ -1,4 +1,5 @@
 
+.idea
 ###> symfony/framework-bundle ###
 /.env.local
 /.env.local.php
@@ -6,7 +7,7 @@
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
-/website/vendor/
+/vendor/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
