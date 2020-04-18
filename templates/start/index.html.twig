@@ -2,12 +2,48 @@
 
 {% block title %}Hello StartController!{% endblock %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/slick.css')  }}" rel="stylesheet"/>
+    <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
+{% endblock %}
+
 {% block body %}
 <div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            aasa
+    <section id="top" class="row">
+        <div class="slider single-item">
+            <div class="slide-item bg-1">
+                <div class="container">
+                    <div class="row">
+                        1111
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item bg-2">
+                <div class="container">
+                    <div class="row">
+                        222
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item bg-3">
+                <div class="container">
+                    <div class="row">
+                        333
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="{{ asset('js/slick.min.js')  }}"></script>
+    <script>
+        $(document).ready(function(){
+            $('.single-item').slick();
+        });
+    </script>
 {% endblock %}

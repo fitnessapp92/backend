@@ -1,4 +1,9 @@
 {
   "css/style.css": "assets/css/style.css",
-  "css/bootstrap.min.css": "assets/css/bootstrap.min.css"
+  "css/bootstrap.min.css": "assets/css/bootstrap.min.css",
+  "js/jquery-3.5.0.min.js": "assets/js/jquery-3.5.0.min.js",
+  "js/bootstrap.min.js": "assets/js/bootstrap.min.js",
+  "js/slick.min.js": "assets/slick/slick.min.js",
+  "css/slick.css": "assets/slick/slick.css",
+  "css/slick-theme.css": "assets/slick/slick-theme.css"
 }

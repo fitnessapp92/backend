@@ -1,0 +1,33 @@
+section#top{
+    /*overflow: hidden;*/
+}
+#top .slider{
+    width: 100%;
+}
+#top .slick-prev{
+    left: 25px;
+    z-index: 999;
+}
+#top .slick-next{
+    right: 25px;
+    z-index: 999;
+}
+#top .slide-item{
+    height: 819px;
+    overflow: hidden;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slide-item.bg-1{
+    background-image: url("https://brizy.b-cdn.net/media/iW=5000&iH=any/296157b7aa7ade666c94ef67380df631.jpg");
+}
+
+.slide-item.bg-2{
+    background-image: url("https://brizy.b-cdn.net/media/iW=5000&iH=any/76ef8fcc433445f38b8070927edfb0ee.jpg");
+}
+
+.slide-item.bg-3{
+    background-image: url("https://brizy.b-cdn.net/media/iW=5000&iH=any/1d99a0fc5c7ac13d2440e56fe2851872.jpg");
+}
