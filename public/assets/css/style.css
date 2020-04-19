@@ -4,14 +4,53 @@ section#top{
 #top .slider{
     width: 100%;
 }
-#top .slick-prev{
+
+#top .slider .prev, #top .slider .next{
+    position: absolute;
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 1;
+    cursor: pointer;
+    background: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+    z-index: 999;
+    font-size: 50px;
+    color: white;
+}
+
+#top .slider .prev{
     left: 25px;
-    z-index: 999;
 }
-#top .slick-next{
+#top .slider .next{
     right: 25px;
-    z-index: 999;
 }
+
+#top .slider .brz-icon-svg {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+    stroke: none;
+    max-width: none;
+    fill: white;
+    color: white;
+    position: absolute;
+    top: 50%;
+}
+
+#top .slider .brz-icon-svg.prev {
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg);
+}
+
 #top .slide-item{
     height: 819px;
     overflow: hidden;
@@ -30,4 +69,106 @@ section#top{
 
 .slide-item.bg-3{
     background-image: url("https://brizy.b-cdn.net/media/iW=5000&iH=any/1d99a0fc5c7ac13d2440e56fe2851872.jpg");
+}
+
+
+#section-1{
+    background-image: url('https://brizy.b-cdn.net/media/iW=5000&iH=any/8266fea1722815cba513c9de797e31cf.jpg');
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*min-height: 600px;*/
+}
+
+.text-red{
+    color: #d34d5e;
+}
+.w-desc{
+    font-size:18px;
+    font-kerning:auto;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    line-height:34.2px;
+}
+#main{
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+h3{
+    font-size: 16px;
+    font-stretch:100%;
+    font-weight:700;
+}
+
+h1{
+    font-size:36px;
+    font-stretch:100%;
+    font-weight:700;
+    font-feature-settings:normal;
+}
+
+.btn-outline-info > span{
+    font-size:14px;
+    font-stretch:100%;
+    font-weight:700;
+    line-height:25.2px;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+ul h4{
+    display:inline-block;
+    line-break:auto;
+    line-height: 39px;
+    text-decoration-line:none;
+    text-underline-position:auto;
+    font-weight:400;
+    font-size:23px;
+    font-stretch:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#section-1 ul li small{
+    display:inline;
+    line-break:auto;
+    line-height:31.5px;
+    text-decoration-line:none;
+    text-underline-position:auto;
+    font-size:15px;
+    font-weight:400;
+}
+
+#section-1 ul {
+    list-style: none;
+    counter-reset: section;
+    padding-left: 60px;
+}
+#section-1 ul li{
+    position: relative;
+}
+#section-1 ul li:before{
+    border: 2px solid rgb(211, 77, 94);
+    font-size: 15px;
+    line-height: 41px;
+    font-weight: 700;
+    text-align-last: auto;
+    text-orientation: mixed;
+    counter-increment: section;
+    content: counter(section);
+    border-radius: 100%;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    position: absolute;
+    left: -80px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    padding: 0;
+    top: 5px;
+    color: rgb(211, 77, 94);;
 }

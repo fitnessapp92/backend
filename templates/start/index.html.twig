@@ -5,11 +5,11 @@
 {% block stylesheets %}
     {{ parent() }}
     <link href="{{ asset('css/slick.css')  }}" rel="stylesheet"/>
-    <link href="https://kenwheeler.github.io/slick/slick/slick-theme.css" rel="stylesheet"/>
+    <link href="{{ asset('css/slick-theme.css')  }}" rel="stylesheet"/>
 {% endblock %}
 
 {% block body %}
-<div class="container-fluid">
+<div id="main" class="container-fluid">
     <section id="top" class="row">
         <div class="slider single-item">
             <div class="slide-item bg-1">
@@ -35,6 +35,44 @@
             </div>
         </div>
     </section>
+    <section id="section-1" class="row py-5">
+        <div class="container py-4">
+            <div class="row py-5">
+                <div class="col-md-5 offset-md-1 col-sm-12">
+                    <h3 class="text-red">FEATURED</h3>
+                    <h1>Workout of the day</h1>
+                    <div class="text-muted w-desc my-4 pr-5">
+                        This is a beginner level workout that is designed to burn fat and build lean muscle mass through a series of short, intense intervals.
+                    </div>
+                    <button class="btn btn-outline-info rounded-0">
+                        <span>CHECK OUT MY WORKOUTS</span>
+                    </button>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <ul>
+                        <li>
+                            <h4>Push Up Burpees - 3 sets of 20 reps</h4>
+                            <small class="text-muted">
+                                Being uncomfortable with ourselves makes us anxious and depressive and affects our life quality.
+                            </small>
+                        </li>
+                        <li>
+                            <h4>Air Squats - 5 sets of 30 seconds</h4>
+                            <small class="text-muted">
+                                Vivamus hendrerit arcu sed erat molestie vehicula sed auctor neque eu tellus rhoncus ut eleifend.
+                            </small>
+                        </li>
+                        <li>
+                            <h4>Butterfly Sit-ups - 50 reps</h4>
+                            <small class="text-muted">
+                                Phasellus molestie magna non est bibendum non venenatis nisl tempor lorem ipsum dolor.
+                            </small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 {% endblock %}
 
@@ -43,7 +81,10 @@
     <script src="{{ asset('js/slick.min.js')  }}"></script>
     <script>
         $(document).ready(function(){
-            $('.single-item').slick();
+            $('.single-item').slick({
+                nextArrow: '<svg id="nc_icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="brz-icon-svg next"><g class="nc-icon-wrapper" fill="currentColor"><title>thin</title><path d="M5.025 16L4 15.009 11.25 8 4 .991 5.025 0l7.762 7.504a.684.684 0 0 1 0 .992L5.025 16z" fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg>',
+                prevArrow: '<svg id="nc_icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="brz-icon-svg prev"><g class="nc-icon-wrapper" fill="currentColor"><title>thin</title><path d="M5.025 16L4 15.009 11.25 8 4 .991 5.025 0l7.762 7.504a.684.684 0 0 1 0 .992L5.025 16z" fill="currentColor" fill-rule="nonzero" stroke="none" stroke-width="1"></path></g></svg>',
+            });
         });
     </script>
 {% endblock %}
