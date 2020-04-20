@@ -80,64 +80,6 @@ section#top{
     /*min-height: 600px;*/
 }
 
-.text-red{
-    color: #d34d5e;
-}
-.w-desc{
-    font-size:18px;
-    font-kerning:auto;
-    font-weight:400;
-    -webkit-font-smoothing:antialiased;
-    line-height:34.2px;
-}
-#main{
-    font-family: Montserrat, sans-serif;
-    -webkit-font-smoothing:antialiased;
-}
-h3{
-    font-size: 16px;
-    font-stretch:100%;
-    font-weight:700;
-}
-
-h1{
-    font-size:36px;
-    font-stretch:100%;
-    font-weight:700;
-    font-feature-settings:normal;
-}
-
-.btn-outline-info > span{
-    font-size:14px;
-    font-stretch:100%;
-    font-weight:700;
-    line-height:25.2px;
-    padding: 5px 20px;
-    display: inline-block;
-}
-
-ul h4{
-    display:inline-block;
-    line-break:auto;
-    line-height: 39px;
-    text-decoration-line:none;
-    text-underline-position:auto;
-    font-weight:400;
-    font-size:23px;
-    font-stretch:100%;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-#section-1 ul li small{
-    display:inline;
-    line-break:auto;
-    line-height:31.5px;
-    text-decoration-line:none;
-    text-underline-position:auto;
-    font-size:15px;
-    font-weight:400;
-}
 
 #section-1 ul {
     list-style: none;
@@ -171,4 +113,200 @@ ul h4{
     padding: 0;
     top: 5px;
     color: rgb(211, 77, 94);;
+}
+
+#section-2{
+    background-image: url('https://brizy.b-cdn.net/media/iW=5000&iH=any/e3aa8c76bfe7ffd096a5d1e47c773569.jpg');
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*min-height: 600px;*/
+    background-color:rgba(6, 77, 82, 0.14);
+}
+
+#section-3{
+    min-height: 600px;
+    background-color: white;
+}
+
+.text-red{
+    color: #d34d5e;
+}
+.text-turquoise{
+    color: #00c8d6;
+}
+
+.w-desc{
+    font-size:18px;
+    font-kerning:auto;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    line-height:34.2px;
+}
+#main{
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing:antialiased;
+}
+h3{
+    font-size: 16px;
+    font-stretch:100%;
+    font-weight:700;
+}
+
+h2{
+    font-family:Montserrat, sans-serif;
+    font-feature-settings:normal;
+    font-kerning:auto;
+    font-size:40px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:300;
+    -webkit-font-smoothing:antialiased;
+    line-height:60px;
+}
+
+h1{
+    font-size:36px;
+    font-stretch:100%;
+    font-weight:700;
+    font-feature-settings:normal;
+}
+
+.btn-outline-info > span{
+    font-size:14px;
+    font-stretch:100%;
+    font-weight:700;
+    line-height:25.2px;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+ul h4{
+    display:inline-block;
+    line-break:auto;
+    line-height: 39px;
+    text-decoration-line:none;
+    text-underline-position:auto;
+    font-weight:400;
+    font-size:23px;
+    font-stretch:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#main small{
+    display:inline;
+    line-break:auto;
+    line-height:31.5px;
+    text-decoration-line:none;
+    text-underline-position:auto;
+    font-size:15px;
+    font-weight:400;
+}
+
+
+#main #recommendations{
+    padding: 40px 0;
+}
+#main #recommendations h4{
+    margin-top: 20px;
+}
+#main #recommendations ul{
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#main #recommendations ul li{
+    line-height:16.8px;
+    padding-top:9px;
+    padding-bottom:8px;
+}
+#main #recommendations ul a{
+    font-feature-settings:normal;
+    font-kerning:auto;
+    font-size:14px;
+    font-stretch:100%;
+    font-style:normal;
+    font-variant-caps:normal;
+    font-variant-east-asian:normal;
+    font-variant-ligatures:normal;
+    font-variant-numeric:normal;
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+    color: rgb(0, 200, 214);;
+}
+#main #recommendations ul a:hover{
+    color: rgb(211, 77, 94);
+}
+#main #recommendations picture{
+    border-radius: 100%;
+    overflow: hidden;
+    display: inline-block;
+    width: 193px;
+    height: 193px;
+}
+#main #recommendations h4{
+    margin: 20px 0;
+}
+
+#main #recommendations button{
+    margin-top: 30px;
+}
+
+#main #recommendations button > span{
+    padding: 10px 42px;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-block;
+}
+#main button{
+    border-width: 2px;
+}
+footer{
+    background-color:rgb(223, 228, 230);
+    height:224px;
+    padding: 30px 0;
+}
+
+footer ul#soc-buttons{
+    margin: 20px 0;
+}
+footer ul#soc-buttons li{
+    margin: 0 15px;
+}
+
+footer ul#soc-buttons li > a{
+    height:54px;
+    width:54px;
+    line-height: 50px;
+    background-color:rgb(255, 255, 255);
+    color:rgb(223, 228, 230);
+    border-color: rgba(35, 157, 219, 0);
+    background-color: rgba(255, 255, 255, 1);
+    background-image: none;
+    border-width: 0;
+    border-style: solid;
+    font-size: 32px;
+    border-radius: 30px;
+    display: inline-block;
+}
+footer ul#soc-buttons li > a > svg{
+    width: 1em;
+    height: 1em;
+}
+
+footer ul#soc-buttons li > a:hover{
+    color: rgba(211, 77, 94, 1);
+    stroke-width: 0;
+    transition: all 0.50s ease-in-out;
+    transition-property: background, border-radius, color, border-color, box-shadow;
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    -webkit-transition-property: background, border-radius, color, border-color, box-shadow;
+    -moz-transition-property: background, border-radius, color, border-color, box-shadow;
 }
